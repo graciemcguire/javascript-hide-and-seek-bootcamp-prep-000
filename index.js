@@ -1,7 +1,20 @@
 function getFirstSelector(selector) {
-  let element = document.querySelector(selector);
-  if(element === selector){
-  return element;
+  return document.querySelector(selector);
+}
+
+function nestedTarget(){
+  return document.querySelector('#nested .target');
+}
+
+function increaseRankBy(n){
+  let rankedList = document.querySelectorAll('ul.ranked-list li');
+  
+  for(let i = 0; i < rankedList.length; i++){
+    rankedList[i].innerHTML = parseInt(rankedList[i].innerHTML) + n;
+    
   }
 }
 
+function deepestChild(){
+  return document.querySelector('#grand-node');
+}
