@@ -16,19 +16,12 @@ function increaseRankBy(n){
 }
 
 function deepestChild(){
-  let nodes = document.querySelectorAll('#grand-node div');
+  let kids = document.querySelectorAll('#grand-node div');
   
-  for (let i = 0; i < nodes.length; i++){
- 
-  if (!nodes.length){
-   return false;
+  for (let i = 0; i < kids.length; i++){
+    if (!kids.length){
+    return false;
   }
-  return nodes[nodes.length -1];
+  return kids[kids.length];
  }
 }
-
-// function deepestChild(id, element) {
-//   var nodes = document.querySelectorAll(`#${id} ${element}`);
-//   if(!nodes.length) return false;
-//   return nodes[nodes.length-1];
-// }
