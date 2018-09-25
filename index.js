@@ -22,6 +22,6 @@ function deepestChild(){
     if (!kids.length){
     return false;
   }
-  return kids;
+  return kids[kids.length-1];
  }
 }
